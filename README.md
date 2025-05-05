@@ -10,28 +10,10 @@ C.
  1. Apresentar os conceitos de variáveis, tipos de dados, operadores e estruturas de controle.
  2. Incluir exemplos de código C com realce de sintaxe e explicação passo a passo.
  3. Oferecer pequenos quizzes para verificar a compreensão do aluno.
- 4. Garantir acessibilidade (HTML semântico, contraste adequado e responsividade).
- 5. Promover o trabalho colaborativo e a divulgação do material em repositório aberto no GitHub Pages.--
-## Planejamento de Horas (120h)
- | Atividade                                          | Horas   |
- | -------------------------------------------------- | ------- |
- | 1. Configuração de ambiente e repositório (GitHub) | 8       |
- | 2. Design de interface e wireframes                | 12      |
- | 3. Estruturação inicial em HTML/CSS                | 16      |
- | 4. Implementação de layout responsivo              | 14      |
- | 5. Desenvolvimento de conteúdo (seções C básica)   | 24      |
- |   • Introdução e variáveis                         | 6       |
- |   • Operadores e controle                          | 6       |
- |   • Funções e modularização                        | 6       |
-|   • Quiz e interatividade                          | 6       |
- | 6. Integração de realce de sintaxe                 | 6       |
- | 7. Testes de usabilidade e acessibilidade          | 10      |
- | 8. Ajustes, validações e correções (bugfixes)      | 10      |
- | 9. Deploy e configuração no GitHub Pages           | 4       |
- | 10. Documentação final e README.md                 | 6       |
- | 11. Reuniões de alinhamento e revisão              | 4       |
- | 12. Reserva para imprevistos                       | 6       |
- | **Total**                                          | **120** |--
+ 4. Oferecer vídeo aulas para cada módulo.
+ 5. Garantir acessibilidade (HTML semântico, contraste adequado e responsividade).
+ 6. Promover o trabalho colaborativo e a divulgação do material em repositório aberto no GitHub Pages.--
+
 ## Metodologia
  Adotaremos **Scrum** e **Kanban** como metodologias ágeis, com:- **Sprints** semanais (cronograma abaixo)- Trello para gerenciamento de tarefas- **Reuniões de planejamento** e **retrospectivas** semanais--
 ## Cronograma de Sprints
