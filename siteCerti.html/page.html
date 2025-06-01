@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Curso de Linguagem C</title>
   <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+  <script src="scriptQuiz.js"></script>
 </head>
 <body>
 
@@ -94,29 +96,63 @@
       </div>
     </section>
 
+    <section id="quiz">
+      <h2>Quiz: Teste seus conhecimentos em C</h2>
+
+      <div class="quiz-question">
+        <p>1. Qual é a função principal de um programa em C?</p>
+        <label>
+          <input type="radio" name="q1" value="errado"> Iniciar o compilador
+        </label>
+        <label>
+          <input type="radio" name="q1" value="certo"> Executar a função main
+        </label>
+        <label>
+          <input type="radio" name="q1" value="errado"> Carregar a biblioteca
+        </label>
+      </div>
+
+      <div class="quiz-question">
+        <p>2. Qual comando usamos para imprimir algo na tela em C?</p>
+        <label>
+          <input type="radio" name="q2" value="errado"> scanf
+        </label>
+        <label>
+          <input type="radio" name="q2" value="certo"> printf
+        </label>
+        <label>
+          <input type="radio" name="q2" value="errado"> cout
+        </label>
+      </div>
+
+      <div class="quiz-question">
+        <p>3. Qual símbolo usamos para terminar uma instrução em C?</p>
+        <label>
+          <input type="radio" name="q3" value="errado"> .
+        </label>
+        <label>
+          <input type="radio" name="q3" value="certo"> ;
+        </label>
+        <label>
+          <input type="radio" name="q3" value="errado"> :
+        </label>
+      </div>
+
+      <button id="submitQuiz">Enviar Respostas</button>
+      <button id="resetQuiz">Reiniciar Quiz</button>
+
+      <div id="quizResult"></div>
+    </section>
+
     <section id="apoio">
       <h2>Material de Apoio</h2>
       <p>Você pode baixar os materiais complementares abaixo:</p>
       <a href="#" class="button-link">Baixar PDF</a>
-    </section>
-
-    <section id="contato">
-      <h2>Certificado e Contato</h2>
-      <p>Ao concluir o curso, solicite seu certificado preenchendo o formulário de contato.</p>
-      <a href="#" class="button-link">Solicitar Certificado</a>
     </section>
   </main>
 
   <footer>
     <p>&copy; 2025 Curso de Linguagem C. Todos os direitos reservados.</p>
   </footer>
-
-  <script>
-    const menuToggle = document.querySelector('.menu-toggle');
-    const nav = document.querySelector('nav ul');
-    menuToggle.addEventListener('click', () => {
-      nav.classList.toggle('active');
-    });
-  </script>
 </body>
 </html>

@@ -143,6 +143,45 @@ footer {
   box-shadow: 0 2px 5px rgba(0,0,0,0.2);
 }
 
+.quiz-question {
+  margin-bottom: 20px;
+}
+
+.quiz-question p {
+  font-weight: bold;
+}
+
+.quiz-question label {
+  display: block;
+  margin: 5px 0;
+}
+
+#quizResult {
+  margin-top: 20px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: green;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.correct {
+  color: green;
+  font-weight: bold;
+}
+
+.incorrect {
+  color: red;
+  font-weight: bold;
+}
+
+
+
 /* Responsividade */
 @media (max-width: 768px) {
   header {
@@ -185,3 +224,5 @@ footer {
     padding: 10px;
   }
 }
+
+
