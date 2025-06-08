@@ -1,336 +1,216 @@
-<!DOCTYPE html>
 <html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>REA: Fundamentos de Programação em C</title>
-    <link rel="stylesheet" href="css/styles.css" />
+    <title>Fundamentos de Programação em C</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/stylesite.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-pO1XExXX... (verifique o hash completo na CDN)"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
-    <header>
-      <nav class="navbar">
-        <div class="logo">Fundamentos de C</div>
-        <ul class="nav-links">
-          <li><a href="#objetivo-geral">Objetivo Geral</a></li>
-          <li><a href="#objetivos-especificos">Objetivos</a></li>
-          <li><a href="#planejamento">Planejamento</a></li>
-          <li><a href="#metodologia">Metodologia</a></li>
-          <li><a href="#cronograma">Cronograma</a></li>
-          <li><a href="#contato">Contato</a></li>
-        </ul>
-        <button class="nav-toggle">☰</button>
-      </nav>
+    <header class="site-header">
+      <div class="container">
+        <img src="/img/logo.png" alt="Logo" class="logo" />
+        <nav class="nav">
+          <ul>
+            <li><a href="#objetivos">Objetivos</a></li>
+            <li><a href="#proposito">Propósito</a></li>
+            <li><a href="#modulos">Módulos das aulas</a></li>
+            <li><a href="#time">Time</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
-    <main>
-      <section id="hero">
-        <h1>REA: Fundamentos de Programação em C</h1>
-        <p>
-          Aprenda os conceitos básicos de programação estruturada em C de forma
-          interativa e didática.
+    <section class="hero">
+      <div class="container">
+        <h1>
+          <code>printf(<span class="green">"Seja Bem-Vindo"</span>);</code>
+        </h1>
+        <p class="subtitle">
+          Ao curso de Fundamentos da Programação em linguagem C
         </p>
-      </section>
+        <a href="#modulos" class="btn btn-primary">Começar</a>
+      </div>
+    </section>
 
-      <section id="objetivo-geral">
-        <h2>Objetivo Geral</h2>
-        <p>
-          Criar uma plataforma interativa com documentações de C, aprendizagem
-          sequencial e vídeo aulas por módulos, de maneira que auxilie
-          iniciantes a entenderem os fundamentos da programação em C.
+    <section class="objetivo" id="objetivos">
+      <div class="container">
+        <h2>
+          <code
+            >printf(<span class="green">"O que você irá aprender?"</span
+            >);</code
+          >
+        </h2>
+        <p class="lead">
+          Você vai aprender os fundamentos da programação, desde a lógica básica
+          até o desenvolvimento do seu primeiro programa em C. Tudo isso de
+          forma prática e interativa, com videoaulas objetivas, quizzes e
+          conteúdos essenciais para dar o seu
+          <span class="green">start</span> no mundo da programação.
         </p>
-      </section>
-
-      <section id="objetivos-especificos">
-        <h2>Objetivos Específicos</h2>
-        <ol>
-          <li>
-            Apresentar variáveis, tipos de dados, operadores e estruturas de
-            controle.
-          </li>
-          <li>Exemplos de código com realce de sintaxe e passo a passo.</li>
-          <li>Quizzes para verificar compreensão.</li>
-          <li>HTML semântico, contraste adequado e responsividade.</li>
-          <li>Divulgação em repositório aberto.</li>
-          <li>Vídeo Aulas gravadas para cada módulo do curso.</li>
-        </ol>
-      </section>
-
-      <section id="planejamento">
-        <h2>Planejamento de Horas por Membro</h2>
-        <table
-          style="width: 100%; border-collapse: collapse; text-align: center"
+        <div class="btn-group">
+          <button class="btn btn-outline">Lógica de Programação</button>
+          <button class="btn btn-secondary">Fundamentos da Programação</button>
+          <button class="btn btn-dark">Base da linguagem em C</button>
+        </div>
+        <a href="material.pdf" class="btn btn-download"
+          >Download Material de Apoio</a
         >
-          <thead style="background: #005f73; color: #fff">
-            <tr>
-              <th style="padding: 8px; border: 1px solid #ccc">Atividade</th>
-              <th style="padding: 8px; border: 1px solid #ccc">
-                Horas (total)
-              </th>
-              <th style="padding: 8px; border: 1px solid #ccc">Luiz</th>
-              <th style="padding: 8px; border: 1px solid #ccc">Igor</th>
-              <th style="padding: 8px; border: 1px solid #ccc">João</th>
-              <th style="padding: 8px; border: 1px solid #ccc">Eleonora</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr style="background: #aad4dc">
-              <td style="padding: 8px; border: 1px solid #ccc">
-                Configuração de ambiente e repositório
-              </td>
-              <td style="padding: 8px; border: 1px solid #ccc">10</td>
-              <td style="padding: 8px; border: 1px solid #ccc">✅</td>
-              <td style="padding: 8px; border: 1px solid #ccc">❌</td>
-              <td style="padding: 8px; border: 1px solid #ccc">❌</td>
-              <td style="padding: 8px; border: 1px solid #ccc">❌</td>
-            </tr>
-            <tr>
-              <td style="padding: 8px; border: 1px solid #ccc">
-                Design de interface e wireframes
-              </td>
-              <td style="padding: 8px; border: 1px solid #ccc">16</td>
-              <td style="padding: 8px; border: 1px solid #ccc">❌</td>
-              <td style="padding: 8px; border: 1px solid #ccc">❌</td>
-              <td style="padding: 8px; border: 1px solid #ccc">❌</td>
-              <td style="padding: 8px; border: 1px solid #ccc">✅</td>
-            </tr>
-            <tr style="background: #aad4dc">
-              <td style="padding: 8px; border: 1px solid #ccc">
-                Estruturação inicial em HTML/CSS
-              </td>
-              <td style="padding: 8px; border: 1px solid #ccc">22</td>
-              <td style="padding: 8px; border: 1px solid #ccc">✅</td>
-              <td style="padding: 8px; border: 1px solid #ccc">✅</td>
-              <td style="padding: 8px; border: 1px solid #ccc">✅</td>
-              <td style="padding: 8px; border: 1px solid #ccc">❌</td>
-            </tr>
-            <tr>
-              <td style="padding: 8px; border: 1px solid #ccc">
-                Implementação de layout responsivo
-              </td>
-              <td style="padding: 8px; border: 1px solid #ccc">26</td>
-              <td style="padding: 8px; border: 1px solid #ccc">❌</td>
-              <td style="padding: 8px; border: 1px solid #ccc">✅</td>
-              <td style="padding: 8px; border: 1px solid #ccc">✅</td>
-              <td style="padding: 8px; border: 1px solid #ccc">✅</td>
-            </tr>
-            <tr style="background: #aad4dc">
-              <td style="padding: 8px; border: 1px solid #ccc">
-                • Introdução e variáveis
-              </td>
-              <td style="padding: 8px; border: 1px solid #ccc">6</td>
-              <td style="padding: 8px; border: 1px solid #ccc">✅</td>
-              <td style="padding: 8px; border: 1px solid #ccc">✅</td>
-              <td style="padding: 8px; border: 1px solid #ccc">✅</td>
-              <td style="padding: 8px; border: 1px solid #ccc">✅</td>
-            </tr>
-            <tr>
-              <td style="padding: 8px; border: 1px solid #ccc">
-                • Operadores e controle de fluxo
-              </td>
-              <td style="padding: 8px; border: 1px solid #ccc">6</td>
-              <td style="padding: 8px; border: 1px solid #ccc">✅</td>
-              <td style="padding: 8px; border: 1px solid #ccc">✅</td>
-              <td style="padding: 8px; border: 1px solid #ccc">✅</td>
-              <td style="padding: 8px; border: 1px solid #ccc">✅</td>
-            </tr>
-            <tr style="background: #aad4dc">
-              <td style="padding: 8px; border: 1px solid #ccc">
-                • Funções e modularização
-              </td>
-              <td style="padding: 8px; border: 1px solid #ccc">6</td>
-              <td style="padding: 8px; border: 1px solid #ccc">✅</td>
-              <td style="padding: 8px; border: 1px solid #ccc">✅</td>
-              <td style="padding: 8px; border: 1px solid #ccc">✅</td>
-              <td style="padding: 8px; border: 1px solid #ccc">❌</td>
-            </tr>
-            <tr>
-              <td style="padding: 8px; border: 1px solid #ccc">
-                • Quiz e interatividade
-              </td>
-              <td style="padding: 8px; border: 1px solid #ccc">6</td>
-              <td style="padding: 8px; border: 1px solid #ccc">✅</td>
-              <td style="padding: 8px; border: 1px solid #ccc">✅</td>
-              <td style="padding: 8px; border: 1px solid #ccc">❌</td>
-              <td style="padding: 8px; border: 1px solid #ccc">❌</td>
-            </tr>
-            <tr style="background: #aad4dc">
-              <td style="padding: 8px; border: 1px solid #ccc">
-                Integração de realce de sintaxe
-              </td>
-              <td style="padding: 8px; border: 1px solid #ccc">8</td>
-              <td style="padding: 8px; border: 1px solid #ccc">❌</td>
-              <td style="padding: 8px; border: 1px solid #ccc">✅</td>
-              <td style="padding: 8px; border: 1px solid #ccc">✅</td>
-              <td style="padding: 8px; border: 1px solid #ccc">✅</td>
-            </tr>
-            <tr>
-              <td style="padding: 8px; border: 1px solid #ccc">
-                Testes de usabilidade e acessibilidade
-              </td>
-              <td style="padding: 8px; border: 1px solid #ccc">14</td>
-              <td style="padding: 8px; border: 1px solid #ccc">❌</td>
-              <td style="padding: 8px; border: 1px solid #ccc">✅</td>
-              <td style="padding: 8px; border: 1px solid #ccc">✅</td>
-              <td style="padding: 8px; border: 1px solid #ccc">✅</td>
-            </tr>
-            <tr style="background: #aad4dc">
-              <td style="padding: 8px; border: 1px solid #ccc">
-                Ajustes e correções (UI/UX e bugs)
-              </td>
-              <td style="padding: 8px; border: 1px solid #ccc">12</td>
-              <td style="padding: 8px; border: 1px solid #ccc">✅</td>
-              <td style="padding: 8px; border: 1px solid #ccc">❌</td>
-              <td style="padding: 8px; border: 1px solid #ccc">❌</td>
-              <td style="padding: 8px; border: 1px solid #ccc">✅</td>
-            </tr>
-            <tr>
-              <td style="padding: 8px; border: 1px solid #ccc">
-                Gravação das aulas
-              </td>
-              <td style="padding: 8px; border: 1px solid #ccc">10</td>
-              <td style="padding: 8px; border: 1px solid #ccc">✅</td>
-              <td style="padding: 8px; border: 1px solid #ccc">❌</td>
-              <td style="padding: 8px; border: 1px solid #ccc">❌</td>
-              <td style="padding: 8px; border: 1px solid #ccc">❌</td>
-            </tr>
-            <tr style="background: #aad4dc">
-              <td style="padding: 8px; border: 1px solid #ccc">
-                Edição das aulas
-              </td>
-              <td style="padding: 8px; border: 1px solid #ccc">14</td>
-              <td style="padding: 8px; border: 1px solid #ccc">✅</td>
-              <td style="padding: 8px; border: 1px solid #ccc">❌</td>
-              <td style="padding: 8px; border: 1px solid #ccc">✅</td>
-              <td style="padding: 8px; border: 1px solid #ccc">✅</td>
-            </tr>
-            <tr>
-              <td style="padding: 8px; border: 1px solid #ccc">
-                Deploy no GitHub Pages
-              </td>
-              <td style="padding: 8px; border: 1px solid #ccc">8</td>
-              <td style="padding: 8px; border: 1px solid #ccc">❌</td>
-              <td style="padding: 8px; border: 1px solid #ccc">✅</td>
-              <td style="padding: 8px; border: 1px solid #ccc">❌</td>
-              <td style="padding: 8px; border: 1px solid #ccc">❌</td>
-            </tr>
-            <tr style="background: #aad4dc">
-              <td style="padding: 8px; border: 1px solid #ccc">
-                Documentação e README
-              </td>
-              <td style="padding: 8px; border: 1px solid #ccc">10</td>
-              <td style="padding: 8px; border: 1px solid #ccc">✅</td>
-              <td style="padding: 8px; border: 1px solid #ccc">❌</td>
-              <td style="padding: 8px; border: 1px solid #ccc">❌</td>
-              <td style="padding: 8px; border: 1px solid #ccc">❌</td>
-            </tr>
-            <tr>
-              <td style="padding: 8px; border: 1px solid #ccc">
-                Reuniões e revisão
-              </td>
-              <td style="padding: 8px; border: 1px solid #ccc">10</td>
-              <td style="padding: 8px; border: 1px solid #ccc">✅</td>
-              <td style="padding: 8px; border: 1px solid #ccc">✅</td>
-              <td style="padding: 8px; border: 1px solid #ccc">✅</td>
-              <td style="padding: 8px; border: 1px solid #ccc">✅</td>
-            </tr>
-            <tr style="background: #aad4dc">
-              <td style="padding: 8px; border: 1px solid #ccc">
-                Reserva para imprevistos
-              </td>
-              <td style="padding: 8px; border: 1px solid #ccc">8</td>
-              <td style="padding: 8px; border: 1px solid #ccc">✅</td>
-              <td style="padding: 8px; border: 1px solid #ccc">✅</td>
-              <td style="padding: 8px; border: 1px solid #ccc">✅</td>
-              <td style="padding: 8px; border: 1px solid #ccc">✅</td>
-            </tr>
-            <tr style="font-weight: bold; background: #005f73; color: #fff">
-              <td style="padding: 8px; border: 1px solid #ccc">
-                Total individual (120 h)
-              </td>
-              <td
-                colspan="5"
-                style="padding: 8px; border: 1px solid #ccc; text-align: right"
-              >
-                Luiz: 120 h &nbsp; Igor: 120 h &nbsp; João: 120 h &nbsp; 
-                Eleonora: 120 h
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </section>
+      </div>
+    </section>
 
-      <section id="metodologia">
-        <h2>Metodologia</h2>
+    <section class="modules" id="modulos">
+      <div class="container">
+        <h2>
+          <code>printf(<span class="green">"Módulos"</span>);</code>
+        </h2>
+        <p>Clique no card da aula para abrir informações da aula</p>
+        <div class="grid-cards">
+          <!-- Repetir este bloco para cada aula -->
+          <div class="card">
+            <h3>Aula 01:</h3>
+            <p>Introdução a Fundamentos em C</p>
+          </div>
+          <div class="card">
+            <h3>Aula 02:</h3>
+            <p>Primeiro Hello World</p>
+          </div>
+          <div class="card">
+            <h3>Aula 03:</h3>
+            <p>Variáveis</p>
+          </div>
+          <div class="card">
+            <h3>Aula 04:</h3>
+            <p>Operadores Lógicos</p>
+          </div>
+          <div class="card">
+            <h3>Aula 05:</h3>
+            <p>printf e scanf</p>
+          </div>
+          <div class="card">
+            <h3>Aula 06:</h3>
+            <p>Estruturas Condicionais</p>
+          </div>
+          <div class="card">
+            <h3>Aula 07:</h3>
+            <p>Estrutura de Repetição</p>
+          </div>
+          <div class="card">
+            <h3>Aula 08:</h3>
+            <p>Funções</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="story" id="proposito">
+      <div class="container">
+        <h2>
+          <code
+            >printf(<span class="green">"Trajetória e Propósito"</span>);</code
+          >
+        </h2>
         <p>
-          Usaremos Scrum e Kanban, com sprints semanais, Trello e reuniões de
-          planejamento/retrospectiva.
+          Todo começou em 2023, com quatro estudantes que ingressaram na UTFPR
+          (Universidade Tecnológica Federal do Paraná), no curso de Análise e
+          Desenvolvimento de Sistemas. Eles não tinham qualquer experiência em
+          programação — apenas a vontade de aprender e crescer. Com o tempo, o
+          conhecimento adquirido se transformou em ideias, as ideias viraram
+          projetos, e os projetos, realidade. E essa é apenas a primeira página
+          de uma grande jornada.
         </p>
-      </section>
+        <blockquote>
+          “Nosso propósito vai além de desenvolver sistemas e dar aulas. Nossa
+          verdadeira missão é transformar
+          <span class="green">conhecimento em ideias</span> e
+          <span class="green">ideias em realidade</span>.”
+        </blockquote>
+      </div>
+    </section>
 
-      <section id="cronograma">
-        <h2>Sprints Semanais</h2>
-        <ul>
-          <li>
-            <strong>Sprint 1 (Semana 1): Setup e Planejamento - 21/04 - 28/04</strong>
-            <ul>
-              <li>Reuniões semanais e revisão de escopo</li>
-              <li>Configuração de ambiente e repositório</li>
-              <li>Design de interface e wireframes</li>
-            </ul>
-          </li>
-          <li>
-            <strong>Sprint 2 (Semana 2): Estrutura e Responsividade - 05/05 - 12/05</strong>
-            <ul>
-              <li>Reuniões semanais</li>
-              <li>Estruturação inicial em HTML/CSS</li>
-              <li>Implementação de layout responsivo</li>
-              <li>Integração de realce de sintaxe</li>
-            </ul>
-          </li>
-          <li>
-            <strong>Sprint 3 (Semana 3): Conteúdo Didático em C - 19/05 - 26/05</strong>
-            <ul>
-              <li>Reuniões semanais</li>
-              <li>Introdução e variáveis</li>
-              <li>Operadores e controle de fluxo</li>
-              <li>Funções e modularização</li>
-              <li>Quiz e interatividade</li>
-            </ul>
-          </li>
-          <li>
-            <strong>Sprint 4 (Semana 4): Produção Multimídia e Testes - 26/05 - 02/06</strong>
-            <ul>
-              <li>Reuniões semanais</li>
-              <li>Gravação das aulas</li>
-              <li>Edição das aulas</li>
-              <li>Testes de usabilidade e acessibilidade</li>
-              <li>Ajustes e correções (UI/UX e bugs)</li>
-            </ul>
-          </li>
-          <li>
-            <strong>Sprint 5 (Semana 5): Finalização e Publicação - 02/06 - 09/06</strong>
-            <ul>
-              <li>Reuniões semanais</li>
-              <li>Documentação e README</li>
-              <li>Deploy no GitHub Pages</li>
-              <li>Reunião de revisão e retrospectiva</li>
-              <li>Reserva para imprevistos e ajustes finais</li>
-            </ul>
-          </li>
-        </ul>
-      </section>
+    <section class="team" id="time">
+      <div class="container">
+        <h2>
+          <code>printf(<span class="green">"Nosso Time"</span>);</code>
+        </h2>
+        <div class="team-grid">
+          <div class="member">
+            <div class="photo photo-pink">
+              <img src="avatars/eleonora.jpg" alt="Eleonora Gaspari" />
+            </div>
+            <h3>Eleonora Gaspari</h3>
+            <a
+              href="https://www.linkedin.com/in/eleonora-gaspari-9943051b2/"
+              class="linkedin"
+              target="_blank"
+              rel="noopener"
+            >
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </div>
+          <div class="member">
+            <div class="photo photo-green">
+              <img src="avatars/joao.jpg" alt="João Vitor Marques" />
+            </div>
+            <h3>João Vitor Marques</h3>
+            <a
+              href="https://www.linkedin.com/in/jo%C3%A3ovitormarques/"
+              class="linkedin"
+              target="_blank"
+              rel="noopener"
+            >
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </div>
+          <div class="member">
+            <div class="photo photo-blue">
+              <img src="avatars/luiz.jpg" alt="Luiz Marçon" />
+            </div>
+            <h3>Luiz Marçon</h3>
+            <a
+              href="https://www.linkedin.com/in/luiz-mar%C3%A7on/"
+              class="linkedin"
+              target="_blank"
+              rel="noopener"
+            >
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </div>
+          <div class="member">
+            <div class="photo photo-cyan">
+              <img src="avatars/igor.jpg" alt="Igor Martins" />
+            </div>
+            <h3>Igor Martins</h3>
+            <a
+              href="https://www.linkedin.com/in/igor-martins-127b2828b/"
+              class="linkedin"
+              target="_blank"
+              rel="noopener"
+            >
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
 
-      <section id="contato">
-        <h2>Equipe</h2>
-        <ul>
-          <li>Luiz Antonio da Silva Marçon</li>
-          <li>Igor Martins Santos</li>
-          <li>João Vitor Fernandes Marques</li>
-          <li>Eleonora de Melo Gaspari</li>
-        </ul>
-      </section>
-    </main>
-
-    <script src="js/scripts.js"></script>
+    <footer class="site-footer">
+      <div class="container">
+        <p>Copyright © Fundamentos em C 2025</p>
+      </div>
+    </footer>
   </body>
 </html>
