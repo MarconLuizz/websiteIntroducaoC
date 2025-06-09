@@ -1,4 +1,4 @@
-document.querySelectorAll("header nav a").forEach((link) => {
+document.querySelectorAll('header nav a[href^="#"]').forEach((link) => {
   link.addEventListener("click", function (e) {
     e.preventDefault();
     const targetId = this.getAttribute("href").substring(1);

@@ -51,6 +51,10 @@ h2 {
   font-weight: bold;
   padding: 0.5rem 0;
 }
+.nav a.active,
+.nav a:hover {
+  color: #8fd300;
+}
 
 /* Hero */
 .hero {

@@ -1,0 +1,63 @@
+body {
+  margin: 0;
+  font-family: "Roboto Mono", monospace;
+  background: #f7f7f7;
+  color: #222;
+  padding-top: 68px; /* espaço para a header fixa */
+}
+
+.quiz-section {
+  padding: 4rem 0;
+}
+
+.quiz-section .container {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.quiz-section h2 {
+  color: #111a37;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.pergunta {
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  background: #f9f9f9;
+  border-radius: 6px;
+  border-left: 4px solid #8fd300;
+}
+
+.pergunta p {
+  margin: 0 0 0.5rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background: #8fd300;
+  color: #0f1946;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  font-weight: bold;
+  display: inline-block;
+  transition: opacity 0.2s;
+}
+.btn-primary:hover {
+  opacity: 0.9;
+}
+
+#resultado {
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-top: 1.5rem;
+}
