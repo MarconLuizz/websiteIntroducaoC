@@ -72,6 +72,7 @@
       </div>
     </section>
 
+    <!-- Módulas / Aulas -->
     <section class="modules" id="modulos">
       <div class="container">
         <h2>
@@ -79,7 +80,6 @@
         </h2>
         <p>Clique no card da aula para abrir informações da aula</p>
         <div class="grid-cards">
-          <!-- Repetir este bloco para cada aula -->
           <div class="card">
             <h3>Aula 01:</h3>
             <p>Introdução a Fundamentos em C</p>
@@ -115,6 +115,20 @@
         </div>
       </div>
     </section>
+
+    <div class="modal-overlay" id="modal">
+      <div class="modal-content">
+        <h2 id="modal-title"></h2>
+        <iframe
+          id="modal-video"
+          src=""
+          frameborder="0"
+          allowfullscreen
+        ></iframe>
+        <p id="modal-desc"></p>
+        <button class="btn-close" id="modal-close">✕ FECHAR</button>
+      </div>
+    </div>
 
     <section class="story" id="proposito">
       <div class="container">
@@ -212,5 +226,8 @@
         <p>Copyright © Fundamentos em C 2025</p>
       </div>
     </footer>
+
+    <script src="/script/popup.js"></script>
+    <script src="script/redirecionamentoSuave.js"></script>
   </body>
 </html>
